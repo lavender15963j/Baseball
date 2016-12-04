@@ -1,0 +1,126 @@
+{% extends "Base.html" %}
+{% load staticfiles %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <h1>近期投注賽事</h1>
+            <table class="table">
+                <tr>
+                    <td>
+                        <p>賽事資訊1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>賽事資訊2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>賽事資訊3</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <h1>會員投注排名</h1>
+        <div id="Buttonset1">
+            <button id="Button1">不讓分</button>
+            <button id="Button2">勝分差</button>
+            <button id="Button3">大小分</button>
+            <button id="Button4">讓分</button>
+        </div>
+        <div>
+            <!--要配合上述三種賭法的變動-->
+            <table width="200" border="1">
+                <tbody>
+                    <tr>
+                        <th>名次</th>
+                        <th>會員名稱</th>
+                        <th>勝率</th>
+                    </tr>
+                    <tr>
+                        <td>第一名</td>
+                        <td>名稱一</td>
+                        <td>第一名勝率</td>
+                    </tr>
+                    <tr>
+                        <td>第二名</td>
+                        <td>名稱二</td>
+                        <td>第二名勝率</td>
+                    </tr>
+                    <tr>
+                        <td>第三名</td>
+                        <td>名稱二</td>
+                        <td>第三名勝率</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <h1>賽程表 </h1> 
+        <form method="post" enctype="multipart/form-data" name="form1" id="form1">
+            <label for="date">日期:</label>
+            <input type="date" name="date" id="date">
+
+            <label for="select">球隊:</label>
+            <select name="select" id="select">
+                <option value="E02">統一獅</option>
+                <option>兄弟象</option>
+                <option>義大犀牛</option>
+                <option>桃猿</option>
+            </select>
+        </form>
+        <img src="{% static 'images/圖片 1.png' %}" width="399" height="290" alt=""/>
+    </div>
+    <hr />
+    <div>
+        <h1>投注教學</h1> 
+        
+    </div>
+    <hr />
+    <div>
+        <h1>戰績表</h1> 
+        <table width="200" border="1">
+            <tbody>
+                <tr>
+                    <th width="55" scope="col">&nbsp;</th>
+                    <th width="22" scope="col">W</th>
+                    <th width="38" scope="col">L</th>
+                    <th width="57" scope="col">%</th>
+                </tr>
+                <tr>
+                    <td>兄弟象</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>統一獅</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>義大</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>桃猿</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

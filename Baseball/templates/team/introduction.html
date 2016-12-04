@@ -1,0 +1,94 @@
+{% extends "Base.html" %}
+{% load staticfiles %}
+
+{% block title %}Introduction{% endblock %}
+
+{% block content %}
+<form method="post" enctype="multipart/form-data" name="form1" id="form1">
+   
+     <label for="select">球隊:</label>
+     <select name="select" id="select">
+       <option>統一獅</option>
+       <option selected>兄弟象</option>
+       <option>義大犀牛</option>
+       <option>桃猿</option>
+     </select>
+</form>
+<hr />
+<h1>球隊介紹</h1>
+<h2>兄弟育樂股份有限公司</h2>
+<p>創隊日期:兄弟象 1984 / 09 / 01 創立</P>
+<p>領隊: 楊培宏</p>
+<p>總教練: 吳復連</p>
+<hr />
+<h1>當季陣容</h1>
+<h3>選手</h3>
+<table class="table">
+    <tr>
+        <th>背號</th>
+        <th>投手</th>
+        <th>位置</th>
+        <th>投/打</th>
+        <th>年齡</th>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th>背號</th>
+        <th>捕手</th>
+        <th>位置</th>
+        <th>投/打</th>
+        <th>年齡</th>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th>背號</th>
+        <th>內野手</th>
+        <th>位置</th>
+        <th>投/打</th>
+        <th>年齡</th>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th>背號</th>
+        <th>外野手</th>
+        <th>位置</th>
+        <th>投/打</th>
+        <th>年齡</th>
+    </tr>
+</table>
+<hr />
+<h3>教練</h3>
+<table class="table">
+    <tr>
+        <th>背號</th>
+        <th>位置</th>
+        <th>姓名</th>
+        <th>年齡</th>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+{% endblock %}

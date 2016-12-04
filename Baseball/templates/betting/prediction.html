@@ -1,0 +1,74 @@
+{% extends "Base.html" %}
+{% load staticfiles %}
+
+{% block title %}Prediction{% endblock %}
+
+{% block content %}
+<h1>投注預測頁面</h1>
+<form method="GET" enctype="multipart/form-data" name="form1" id="form1">
+     <label>球隊:</label>
+     <select name="select" id="select">
+       <option>統一獅</option>
+       <option selected>兄弟象</option>
+       <option>義大犀牛</option>
+       <option>桃猿</option>
+     </select> 
+   
+     <label>V.S.</label>
+    
+     <label>球隊:</label>
+     <select name="select" id="select">
+       <option selected>統一獅</option>
+       <option>兄弟象</option>
+       <option>義大犀牛</option>
+       <option>桃猿</option>
+     </select>  
+</form>
+
+<table class="table table-striped" width="444" border="1">
+  <tbody>
+    <tr>
+      <th width="78" scope="col">賽事資訊</th>
+      <th width="68" scope="col">球隊</th>
+      <th width="40" scope="col">讓分</th>
+      <th width="53" scope="col">不讓分</th>
+      <th width="70" scope="col">勝分差</th>
+      <th width="95" scope="col">大小分</th>
+    </tr>
+    <tr>
+      <td height="43">120 11/2</td>
+      <td><p>兄弟象</p>
+      <p>vs</p>
+      <p>統一獅</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

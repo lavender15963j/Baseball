@@ -1,0 +1,69 @@
+{% extends "Base.html" %}
+{% load staticfiles %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block extrastyles %}
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="{% static 'js/betting/statistics.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div>
+    <form>
+        <select name='win'>
+            <option selected>中信兄弟</option>
+            <option>Lamigo</option>
+            <option>義大</option>
+            <option>統一7-ELEVEn</option>
+        </select>
+        <label>贏</label>
+        <select name='lose'>
+            <option>中信兄弟</option>
+            <option>Lamigo</option>
+            <option>義大</option>
+            <option selected>統一7-ELEVEn</option>
+        </select>
+        <label>在過去</label>
+        <select name='time'>
+            <option selected>150</option>
+            <option>100</option>
+            <option>50</option>
+            <option>30</option>
+        </select>
+        <label>場</label>
+        <input type="submit" />
+    </form>    
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4" id="chart1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div class="col-md-4" id="chart2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div class="col-md-4" id="chart3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</div>    
+<br />
+<div class="row">
+    <div class="col-md-4" id="chart4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div class="col-md-4" id="chart5" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div class="col-md-4">
+        <table>
+            <tr>
+                <td><img src='http://cpbl-elta.cdn.hinet.net/web/images/teamlogob2.png' width="150" height="140" /></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><label>V.S.</label></td>
+                <td>&nbsp;</td>
+            </tr>    
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><img src='http://cpbl-elta.cdn.hinet.net/web/images/teamlogol.png' width="150" height="140" /></td>
+            </tr>
+        </table>
+    </div>
+</div>
+{% endblock %}

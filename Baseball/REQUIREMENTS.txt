@@ -1,0 +1,18 @@
+# PROJECT REQUIREMENTS LIST, PLEASE NOTE THIS FILE IS ALSO USED FOR PYTHON PIP,
+# SO ALL NON-PYTHON PACKAGES ARE MARKED AS COMMENTS.
+
+# ============ LIB ============
+
+# ============ Nuwa Developed ============
+
+# ============ Third Party ============
+
+# django (https://pypi.python.org/pypi/Django)
+django==1.8.4
+
+#scrapy
+scrapy==1.2
+
+#scrapy-djangoitem
+scrapy-djangoitem==1.1.1
+

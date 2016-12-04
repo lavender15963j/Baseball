@@ -1,0 +1,229 @@
+{% extends "Base.html" %}
+{% load staticfiles %}
+
+{% block title %}Record{% endblock %}
+
+{% block content %}
+<form method="post" enctype="multipart/form-data" name="form1" id="form1">
+     <label for="select">球隊:</label>
+     <select name="select" id="select">
+       <option value="E02">統一獅</option>
+       <option>兄弟象</option>
+       <option>義大犀牛</option>
+       <option>桃猿</option>
+     </select> 
+</form>
+<hr />
+<h1>當季球隊戰績</h1>
+<table width="888" height="150" border="1">
+    <tbody>
+      <tr>
+        <th width="222" scope="col">Game No.</th>
+        <th width="162" scope="col">球場</th>
+        <th width="162" scope="col">日期</th>
+        <th width="79" scope="col">主場球隊</th>
+        <th width="45" scope="col">得分</th>
+        <th width="65" scope="col">客場球隊</th>
+        <th width="40" scope="col">得分</th>
+        <th width="61" scope="col">贏者</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+<h1> 歷年團隊成績</h1>
+
+  <p>
+    <label for="select2">Select:</label>
+    <select name="select2" id="select2">
+      <option>2011</option>
+      <option>2102</option>
+      <option>2013</option>
+      <option>2014</option>
+      <option>2015</option>
+      <option>2016</option>
+    </select>
+    </p>
+    <table width="719" height="79" border="1">
+    <tbody>
+      <tr>
+        <th width="100" scope="col">球隊對戰戰績</th>
+        <th width="42" scope="col">G</th>
+        <th width="55" scope="col">W-T-L</th>
+        <th width="40" scope="col">PCT</th>
+        <th width="51" scope="col">兄弟</th>
+        <th width="51" scope="col">義大</th>
+        <th width="51" scope="col">桃猿</th>
+        <th width="51" scope="col">統一獅</th>
+        <th width="51" scope="col">主場</th>
+        <th width="51" scope="col">客場</th>
+        <th width="69" scope="col">STREAK</th>
+      </tr>
+      <tr>
+        <td height="31">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <table width="721" height="89" border="1">
+    <tbody>
+      <tr>
+        <th width="111" scope="col">團隊投球成績</th>
+        <th width="42" scope="col">G</th>
+        <th width="43" scope="col">BF</th>
+        <th width="34" scope="col">NP</th>
+        <th width="20" scope="col">H</th>
+        <th width="39" scope="col">HR</th>
+        <th width="34" scope="col">BB</th>
+        <th width="34" scope="col">SO</th>
+        <th width="40" scope="col">WP</th>
+        <th width="37" scope="col">BK</th>
+        <th width="19" scope="col">R</th>
+        <th width="36" scope="col">ER</th>
+        <th width="70" scope="col">WHIP</th>
+        <th width="74" scope="col">ERA</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <table width="726" height="85" border="1">
+    <tbody>
+      <tr>
+        <th width="111" scope="col">團隊打擊成績</th>
+        <th width="29" scope="col">G</th>
+        <th width="26" scope="col">AB</th>
+        <th width="22" scope="col">R</th>
+        <th width="46" scope="col">RBI</th>
+        <th width="46" scope="col">H</th>
+        <th width="46" scope="col">HR</th>
+        <th width="46" scope="col">TB</th>
+        <th width="46" scope="col">SO</th>
+        <th width="46" scope="col">BB</th>
+        <th width="46" scope="col">SB</th>
+        <th width="46" scope="col">OBP</th>
+        <th width="46" scope="col">SLG</th>
+        <th width="56" scope="col">AVG</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <table width="727" height="102" border="1">
+    <tbody>
+      <tr>
+        <th width="105" scope="col">團隊手臂成績</th>
+        <th width="27" scope="col">G</th>
+        <th width="30" scope="col">TC</th>
+        <th width="22" scope="col">PO</th>
+        <th width="43" scope="col">A</th>
+        <th width="43" scope="col">E</th>
+        <th width="43" scope="col">DP</th>
+        <th width="43" scope="col">PK</th>
+        <th width="43" scope="col">TP </th>
+        <th width="43" scope="col">PB</th>
+        <th width="43" scope="col">CS</th>
+        <th width="43" scope="col">SB</th>
+        <th width="117" scope="col">FPCT</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+</div>
+
+{% endblock %}
