@@ -70,7 +70,12 @@ class LoginView(TemplateView):
         redirect_to = request.POST.get(redirect_field_name,
                                    request.GET.get(redirect_field_name, ''))
         """
-        redirect_to = '/'
+        if request.GET.get('next'):
+            redirect_to = request.GET.get('next')
+        else:
+            redirect_to = '/'
+        print redirect_to
+
         form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
             auth_login(request, form.get_user())

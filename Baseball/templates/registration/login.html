@@ -6,7 +6,7 @@
 {% block content %}
 <div>
   <h1>登入 :</h1>
-  <form method="POST" action="{% url 'main:login' %}">
+  <form method="POST" action="{% url 'main:login' %}{% if request.GET.next %}?next={{ request.GET.next }}{% endif %}">
     {% csrf_token %}
     {{ form }}
     <input type="submit" />
