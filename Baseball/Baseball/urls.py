@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django.contrib.auth.views import login, logout
 
 from main.app import application as main_app
 from forum.app import application as forum_app
@@ -26,9 +25,6 @@ from team.app import application as team_app
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     
-    url(r'^accounts/login/$', login, name='login'),
-    url(r'^accounts/logout/$', logout, name='logout'),
-
     url(r'', include(main_app.urls)),
     url(r'^forum/', include(forum_app.urls)),
     url(r'^betting/', include(betting_app.urls)),

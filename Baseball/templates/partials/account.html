@@ -1,0 +1,31 @@
+<div id="top_page" class="navbar navbar-default navbar-static-top accounts">
+    <div class="navbar-collapse account-collapse collapse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                {% if request.user.is_authenticated %}
+                    <li>
+                        <a id="logout_link" href="{% url 'main:member' %}">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;{{ request.user.username }}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="logout_link" href="{% url 'main:logout' %}">
+                            <span class="glyphicon glyphicon-log-out"></span>&nbsp;登出
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a id="login_link" href="{% url 'main:register' %}">
+                            <span class="glyphicon glyphicon-registration-mark"></span>&nbsp;註冊
+                        </a>
+                    </li>
+                    <li>
+                        <a id="login_link" href="{% url 'main:login' %}">
+                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;登入
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>

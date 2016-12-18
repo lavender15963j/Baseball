@@ -43,10 +43,12 @@ INSTALLED_APPS = (
     'betting',
     'team',
     'player',
-
+    'main',
     'game',
 
 )
+
+AUTH_USER_MODEL = 'main.User'
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
