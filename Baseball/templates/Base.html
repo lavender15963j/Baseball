@@ -2,34 +2,41 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Baseball - {% block title %}{% endblock %}</title>
-        {% block extrahead %}{% endblock %}
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <title>Baseball - {% block title %}{% endblock %}</title>
+    {% block extrahead %}{% endblock %}
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
-        <link href="{% static 'css/main/main.css' %}" rel="stylesheet" type="text/css">
-        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <script src="{% static 'js/main/main.js '%}" type="text/javascript"></script>
-        {% block extrastyles %}{% endblock %}
-    </head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
-    <body>
-        {% include "partials/account.html" %}
-        {% include "partials/header.html" %}
-        {% include "partials/navbar.html" %}
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
 
-        <div>
-            {% block content %}{% endblock %}
-        </div>
-        {% include "partials/footer.html" %}
-    </body>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link href="{% static 'css/main/main.css' %}" rel="stylesheet" type="text/css">
+
+    <script src="{% static 'js/main/main.js '%}" type="text/javascript"></script>
+    {% block extrastyles %}{% endblock %}
+</head>
+
+<body>
+    {% include "partials/account.html" %} 
+    {% include "partials/header.html" %} 
+    {% include "partials/navbar.html" %}
+
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+    {% include "partials/footer.html" %}
+</body>
+
 </html>

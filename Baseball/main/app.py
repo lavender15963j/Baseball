@@ -10,10 +10,14 @@ class MainApplication(Application):
     def get_urls(self):
         urls = [
             url(r'^$', views.getHomeView, name='home'),
-            url(r'^accounts/login/$', views.LoginView.as_view(), name="login"),
-            url(r'^accounts/logout/$', views.LogoutView.as_view(), name="logout"),
-            url(r'^accounts/register/$', views.RegisterView.as_view(), name="register"),
-            url(r'^accounts/data/$', views.getMemberView, name='member'),
+
+            url(r'^accounts/login$', views.LoginView.as_view(), name="login"),
+            url(r'^accounts/logout$', views.LogoutView.as_view(), name="logout"),
+            url(r'^accounts/register$', views.RegisterView.as_view(), name="register"),
+
+            url(r'^accounts/data$', views.getMemberView, name='member'),
+            url(r'^accounts/data/betting/real$', views.getBettingRealView, name='real'),
+            url(r'^accounts/data/betting/fake$', views.getBettingFakeView, name='fake'),
         ]
         return urls
 

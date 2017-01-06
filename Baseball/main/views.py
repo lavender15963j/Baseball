@@ -17,7 +17,13 @@ def getHomeView(request):
     return render(request, 'main/Home.html')
 
 def getMemberView(request):
-    return render(request, 'member.html')
+    return render(request, 'registration/member.html')
+
+def getBettingRealView(request):
+    return render(request, 'registration/betting/real.html')
+
+def getBettingFakeView(request):
+    return render(request, 'registration/betting/fake.html')
     
 class TeamView(ListView):
     context_object_name = 'games'
@@ -110,7 +116,7 @@ class RegisterView(TemplateView):
         if form.is_valid():
             user = form.save()
             
-            return redirect("/account/login/")
+            return redirect("/accounts/login/")
         ctx = self.get_context_data(form=form)
         return self.render_to_response(ctx)
 

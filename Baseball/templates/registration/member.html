@@ -1,0 +1,72 @@
+{% extends "Base.html" %} 
+{% load staticfiles %} 
+
+{% block title %}Account{% endblock %} 
+
+{% block content %}
+<div class="wrapper">
+  <h1>{{ request.user.username }} 的個人空間 勝率：40% 金幣：100</h1>
+  <p>&nbsp;</p>
+</div>
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" id="myTabs" role="tablist">
+    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">個人資料</a></li>
+    <li role="presentation"><a href="#betting" aria-controls="betting" role="tab" data-toggle="tab">投注資料</a></li>
+    <li role="presentation"><a href="#forum" aria-controls="forum" role="tab" data-toggle="tab">文章</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" id='myTabContent'>
+
+    <!-- 個人資料頁 -->
+    <div role="tabpanel" class="tab-pane active" id="profile">
+      {% include "registration/partials/member_profile.html" %}
+    </div>
+
+    <!-- 投注紀錄頁 -->
+    <div role="tabpanel" class="tab-pane" id="betting">
+      {% include "registration/partials/member_betting.html" %}
+    </div>
+
+    <!-- 個人發文分頁 -->
+    <div role="tabpanel" class="tab-pane" id="forum">
+      {% include "registration/partials/member_forum.html" %}
+    </div>
+  </div>
+
+  <script>
+    $('#myTabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    });
+  </script>
+
+</div>
+<!--
+<div>
+  <h1> 統計資料(打算搬家)</h1>
+  <label for="select">Select:</label>
+  <select name="select" id="select">
+      <option>過去一個月</option>
+      <option>過去兩個月</option>
+    </select>
+
+  <table width="508" height="81" border="1">
+    <tbody>
+      <tr>
+        <th width="251" scope="col">成功率</th>
+        <th width="241" scope="col">&nbsp;</th>
+      </tr>
+      <tr>
+        <td>累積金額</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+</div>-->
+
+{% endblock %}

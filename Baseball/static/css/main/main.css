@@ -28,12 +28,12 @@ body{
 	background:#040404;
 	text-align:center; 
 	position:relative;
-	z-index: 2000;
+	
 }
 
 #navbar ul li{
 	display:inline-block;
-	z-index: 2000;
+	
 }
 #navbar ul li a{
 	display:block;
@@ -43,21 +43,21 @@ body{
 	font-family:helvetica;
 	line-height:43px;
 	text-decoration:none;
-	z-index: 2000;
+	
 }
 #navbar ul li a:hover{
 	background:#49a9e9;
 	color:#F5F5F5;
-	z-index: 2000;
+	
 }
 #navbar ul ul{
 	position:absolute;
 	width:150px;
 	display:none;
-	z-index: 2000;
+	
 }
 #navbar ul ul li{
 	display:block;
 	background:#2199e8;
-	z-index: 2000;  
+	 
 } 
