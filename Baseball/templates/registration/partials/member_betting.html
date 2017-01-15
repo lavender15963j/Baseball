@@ -1,32 +1,168 @@
+
+
 <div class="row">
     <div class="col-md-12">
         <h1>真實投注筆記</h1>
-        <table width="509" height="164" border="1">
+        <table class="table table-striped" width="444" border="1">
             <tbody>
+                <!-- 未投 -->
                 <tr>
-                    <th width="164" scope="col">賽事資訊</th>
-                    <th width="164" scope="col">你的投注</th>
-                    <th width="159" scope="col">實際結果</th>
-                    <th width="159" scope="col">賺或賠</th>
+                    <th width="20" scope="col">記錄時間</th>
+                    <th width="66" scope="col">賽事資訊</th>
+                    <th width="56" scope="col">球隊</th>
+                    <th colspan="2" scope="col">讓分</th>
+                    <th colspan="2" scope="col">不讓分</th>
+                    <th colspan="2" scope="col">勝分差</th>
+                    <th colspan="2" scope="col">大小分</th>
+
+
+                    <th colspan="2" scope="col">獲得總金額</th>
                 </tr>
+                <tr class="success"> 
+                    <td>2017 1/20</td>
+                    <td height="43">
+                        <p>200 1/20</p>
+                        <p>(尚未開始)</p>
+                        </td>
+                    <td>
+                        <p>兄弟象</p>
+                        <p>vs</p>
+                        <p>統一獅</p>
+                    </td>
+
+                    <!--讓分-->
+                    <td width="37">
+                        <p>兄弟象 5.5+(1.4)</p>
+                        <p>統一獅 3+(1.5)</p>
+
+                    </td>
+                    <td width="56">
+                        <p>兄弟象 : 30 NT</p>
+                            <p>統一獅 : 0 NT</p>
+                    </td>
+
+                    <!--不讓分-->
+                    <td width="84">
+                        <p>兄弟象(2.0)</p>
+                        <p>統一獅(1.8)</p>
+                    </td>
+                    <td width="59">
+                        
+                            <p>兄弟象 : 30 NT</p>
+                            <p>統一獅 : 0 NT</p>
+                        
+                    </td>
+
+                    <!--勝分差-->
+                    <td width="84">
+                        <p>勝分差4.5+</p>
+                        
+                    </td>
+                    <td width="59">
+                        <p>兄弟象 : 30 NT</p>
+                            <p>統一獅 : 0 NT</p>
+                    </td>
+
+                    <!--大小分-->
+                    <td width="75">
+                        <p>兄弟象大小分6</p>
+                        <p >大分(1.4)</p>
+                        <p>大分(1.5)</p>
+                    </td>
+                    <td width="71">
+                        <p>大分 : 30 NT</p>
+                            <p>小分 : 0 NT</p>
+                    </td>
+
+
+
+                    <!--總金額-->
+                    <td width="61">
+                        <p>尚未開始</p>
+                    </td>
+                </tr>
+
+                <tr class="danger"> 
+                    <td>2016 11/15</td>
+                    <td height="43">
+                        <p>50 11/15</p>
+                        <p>(已賽完)</p>
+                        </td>
+                    
+                    <td>
+                        <p>兄弟象 <label style="color:red;"> 勝</label></p>
+                        <p>vs</p>
+                        <p>統一獅</p>
+                    </td>
+
+                    <!--讓分-->
+                    <td width="37">
+                        <p style="color:red;">兄弟象 5.5+(1.4)</p>
+                        <p>統一獅 3+(1.5)</p>
+
+                    </td>
+                    <td width="56">
+                        <p>兄弟象 : 30 NT</p>
+                            <p>統一獅 : 0 NT</p>
+                    </td>
+
+                    <!--不讓分-->
+                    <td width="84">
+                        <p style="color:red;">兄弟象(2.0)</p>
+                        <p>統一獅(1.8)</p>
+                    </td>
+                    <td width="59">
+                        
+                            <p>兄弟象 : 30 NT</p>
+                            <p>統一獅 : 0 NT</p>
+                        
+                    </td>
+
+                    <!--勝分差-->
+                    <td width="84">
+                        <p>勝分差4.5+</p>
+                        <p style="color:red;">兄弟象</p>
+                    </td>
+                    <td width="59">
+                        <p>兄弟象 : 30 NT</p>
+                            <p>統一獅 : 0 NT</p>
+                    </td>
+
+                    <!--大小分-->
+                    <td width="75">
+                        <p>兄弟象大小分6</p>
+                        <p style="color:red;">大分(1.4)</p>
+                        <p>大分(1.5)</p>
+                    </td>
+                    <td width="71">
+                        <p>大分 : 30 NT</p>
+                            <p>小分 : 0 NT</p>
+                    </td>
+
+
+
+                    <!--總金額-->
+                    <td width="61">
+                        <p>30000 NT</p>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                </tr>
-                <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                </tr>
-                <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                </tr>
+                    
+                    </tr>
+                    
             </tbody>
         </table>
 
@@ -66,8 +202,8 @@
 
                         投注方式 :
                         <select>
-                            <option>大分</option>
-                            <option>小分</option>
+                            <option>大小分</option>
+                            
                             <option>讓分</option>
                             <option>不讓分</option>
                             <option>勝分差</option>
@@ -90,36 +226,297 @@
 
     <div class="col-md-12">
         <h1>虛擬投注記錄</h1>
-        <table width="509" height="164" border="1">
-            <tbody>
-                <tr>
-                    <th width="164" scope="col">賽事資訊</th>
-                    <th width="164" scope="col">你的投注</th>
-                    <th width="159" scope="col">實際結果</th>
-                    <th width="159" scope="col">賺或賠</th>
-                </tr>
-                <tr>
+        <table class="table table-striped" width="444" border="1">
+  <tbody>
+    <!-- 未投 -->
+    <tr>
+      <th width="66" scope="col">賽事資訊</th>
+      <th width="56" scope="col">球隊</th>
+      <th colspan="2" scope="col">讓分</th>
+      <th colspan="2" scope="col">不讓分</th>
+      <th colspan="2" scope="col">勝分差</th>
+      <th colspan="2" scope="col">大小分</th>
+      
+
+      <th width="56" scope="col">投注情況</th>
+      <th width="56" scope="col">獲得金幣</th>
+    </tr>
+
+    <tr class="success">
+      <td height="43">
+          <p>200 1/20</p>
+          <p>(尚未開始)</p>
+          </td>
+      <td>
+        <p>兄弟象</p>
+        <p>vs</p>
+        <p>統一獅</p>
+      </td>
+
+      <!--讓分-->
+      <td width="37">
+        <p >兄弟象 5.5+(1.4)</p>
+        <p>統一獅 3+(1.5)</p>
+
+      </td>
+      <td width="56">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>兄弟象<br>
+          <input type="checkbox" name="big" value="team2" disabled/>統一獅
+        </form> 
+      </td>
+
+      <!--不讓分-->
+      <td width="84">
+        <p >兄弟象(2.0)</p>
+        <p>統一獅(1.8)</p>
+      </td>
+      <td width="59">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>兄弟象<br>
+          <input type="checkbox" name="big" value="team2" disabled/>統一獅
+        </form> 
+      </td>
+
+      <!--勝分差-->
+      <td width="84">
+        <p>勝分差4.5+</p>
+        
+      </td>
+      <td width="59">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>兄弟象<br>
+          <input type="checkbox" name="big" value="team2" disabled/>統一獅
+        </form> 
+      </td>
+
+      <!--大小分-->
+      <td width="75">
+          <p>兄弟象大小分6</p>
+          <p >大分(1.4)</p>
+          <p>大分(1.5)</p>        
+          </td>
+      
+      <td width="71">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>大分<br>
+          <input type="checkbox" name="big" value="team2" disabled/>小分
+        </form> 
+      </td>
+
+      
+
+      <!--提交-->
+      <td >
+        
+        <br>
+
+              <a data-toggle="modal" data-target="#myModal2">
+            累積投注人數 : XXX
+        </a>
+
+        <div class="modal fade bs-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">累積投注人數 </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="chart1">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        </td>
+
+        <td>
+            尚未開始
+        </td>
+    </tr>
+
+    <tr class="danger">
+      <td height="43">
+          <p>50 11/15</p>
+          <p>(已賽完)</p>
+          </td>
+      <td>
+        <p>兄弟象 <label style="color:red;"> 勝</label></p>
+        <p>vs</p>
+        <p>統一獅</p>
+      </td>
+
+      <!--讓分-->
+      <td width="37">
+        <p style="color:red;">兄弟象 5.5+(1.4)</p>
+        <p>統一獅 3+(1.5)</p>
+
+      </td>
+      <td width="56">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>兄弟象<br>
+          <input type="checkbox" name="big" value="team2" disabled/>統一獅
+        </form> 
+      </td>
+
+      <!--不讓分-->
+      <td width="84">
+        <p style="color:red;">兄弟象(2.0)</p>
+        <p>統一獅(1.8)</p>
+      </td>
+      <td width="59">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>兄弟象<br>
+          <input type="checkbox" name="big" value="team2" disabled/>統一獅
+        </form> 
+      </td>
+
+      <!--勝分差-->
+      <td width="84">
+        <p>勝分差4.5+</p>
+        <p style="color:red;">兄弟象</p>
+      </td>
+      <td width="59">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>兄弟象<br>
+          <input type="checkbox" name="big" value="team2" disabled/>統一獅
+        </form> 
+      </td>
+
+      <!--大小分-->
+      <td width="75">
+          <p>兄弟象大小分6</p>
+          <p style="color:red;">大分(1.4)</p>
+          <p>大分(1.5)</p>        
+          </td>
+      
+      <td width="71">
+        <form>
+          <input type="checkbox" name="big" value="team1" checked disabled/>大分<br>
+          <input type="checkbox" name="big" value="team2" disabled/>小分
+        </form> 
+      </td>
+
+      
+
+      <!--提交-->
+      <td >
+        
+        <br>
+
+              <a data-toggle="modal" data-target="#myModal2">
+            累積投注人數 : XXX
+        </a>
+
+        <div class="modal fade bs-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">累積投注人數 </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="chart1">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        </td>
+
+        <td>
+            4 金幣
+        </td>
+    </tr>
+    <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                </tr>
-                <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                </tr>
-                <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                </tr>
-            </tbody>
-        </table>
+                    
+                    </tr>
+                    
+    </tbody>
+</table>
 
         <a href="{% url 'betting:prediction' %}">我想虛擬投注</a>
         <a href="{% url 'main:fake' %}">更多...</a>
     </div>
 </div>
+
+<script>
+  $(function () {
+      Highcharts.chart('chart1', {
+          chart: {
+              type: 'column'
+          },
+          title: {
+              text: '虛擬投注情形'
+          },
+          subtitle: {
+              text: '目前累積投注人數 : XXX'
+          },
+          xAxis: {
+              categories: [
+                  '讓分',
+                  '不讓分',
+                  '勝分差',
+                  '大小分' 
+              ],
+              crosshair: true
+          },
+          yAxis: {
+              min: 0,
+              title: {
+                  text: '次數 (次)'
+              }
+          },
+          tooltip: {
+              headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+              pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                  '<td style="padding:0"><b>{point.y:.1f} 次</b></td></tr>',
+              footerFormat: '</table>',
+              shared: true,
+              useHTML: true
+          },
+          plotOptions: {
+              column: {
+                  pointPadding: 0.2,
+                  borderWidth: 0
+              }
+          },
+          series: [{
+              name: '兄弟象',
+              data: [30,15,30,20]
+          },
+          {
+              name: '統一獅',
+              data: [20,20,30,15]
+          }
+          ]
+      });
+  });
+</script>

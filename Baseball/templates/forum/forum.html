@@ -4,73 +4,23 @@
 {% block title %}Forum{% endblock %}
 
 {% block content %}
-<div>
-	<h2>這是討論區頁面</h2>
-</div>
+
+
+<form>
+    文章分類 :
+    <select name="select" id="select">
+       <option>棒球新聞</option>
+       <option>投注分析</option>
+       <option>閒聊</option>
+       <option>其他</option>
+     </select> 
+ 
+    <input type='submit' value='搜尋'/>
+</form>
+    
 
 <div>
-    <h1> 即時賭盤</h1>
-    <table class="table">
-        <tr>
-            <td>
-                <p>兄弟象要讓犀牛3.5分</p>
-                <p>賠率 : 1.5</p>
-            </td>
-            <td>
-                <p>兄弟象贏</p>
-                <p>賠率 : 1.3</p>
-            </td>
-            <td>
-                <p>大分 : 8分</p>
-                <p>賠率 : 1.9</p>
-            </td>
-            <td>
-                <p>小分 : 3分</p>
-                <p>賠率 : 2</p>
-            </td>
-        </tr>
-    </table>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-	    <h1>會員投注排名</h1>
-     	<button id="Button1">不讓分</button>
-     	<button id="Button2">勝分差</button>
-     	<button id="Button3">大小分</button>
-        <button id="Button4">讓分</button>
-  	</div>
-      
-    <div class="col-md-4">
-    	<table class="table table-striped" width="200" border="1">
-  			<tbody>
-    			<tr>
-      				<th>名次</th>
-				    <th>會員名稱</th>
-        			<th>勝率</th>
-  			    </tr>
-                <tr>
-      				<td>第一名</td>
-				    <td>名稱一</td>
-        			<td>第一名勝率</td>
-  			    </tr>
-			    <tr>
-   				    <td>第二名</td>
-   				    <td>名稱二</td>
-  				    <td>第二名勝率</td>
- 			    </tr>
- 			    <tr>
-  				    <td>第三名</td>
-     			    <td>名稱二</td>
-     			    <td>第三名勝率</td>
-   			    </tr>
-  			</tbody>
-		</table>
-    </div>
-</div>
-
-<div>
-  <h1>這是討論版</h1>
+  
   <table class="table table-striped" width="200" border="1">
         <tbody>
             <tr>
@@ -78,26 +28,17 @@
                 <th>文章名稱</th>
                 <th>文章作者</th>
                 <th>瀏覽次數</th>
+                <th>發文時間</th>
             </tr>
             <tr>
                 <td>棒球新聞</td>
                 <td><a href="{% url 'forum:forum_article' 'Lavender' 1 %}">中華隊2017經典賽先發預測</a></td>
-                <td>立花瀧</td>
+                <td>Maple</td>
                 <td>10000000</td>
+                <td>2016 11/15</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -108,11 +49,6 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -120,14 +56,38 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
